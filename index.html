@@ -4,64 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditi Tyagi - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-        .section {
-            background: white;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .projects li {
-            margin: 10px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Aditi Tyagi</h1>
-        <p>BTech Student | Cloud Enthusiast</p>
+        <nav>
+            <div class="nav-content">
+                <h1>Aditi Tyagi</h1>
+                <div class="social-links">
+                    <a href="https://github.com/aditityagi123" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aditi-tyagi-2197151a7/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
     </header>
-    
-    <div class="container">
-        <section class="section">
-            <h2>About Me</h2>
-            <p>Hello! I am Aditi Tyagi, a third-year BTech student at UPES. I have a keen interest in cloud computing and have worked on multiple cloud-based projects.</p>
-        </section>
-        
-        <section class="section projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Cloud Deployment of a Web App</strong> - Deployed a web application using AWS services like EC2, S3, and RDS.</li>
-                <li><strong>Serverless Chatbot</strong> - Developed a chatbot using AWS Lambda and API Gateway.</li>
-                <li><strong>Cloud-based File Storage</strong> - Created a file storage system using Google Cloud Storage.</li>
-                <li><strong>Kubernetes Cluster Setup</strong> - Implemented a Kubernetes cluster for scalable application deployment.</li>
-            </ul>
-        </section>
-        
-        <section class="section">
-            <h2>Contact</h2>
-            <p>Email: aditi.tyagi@example.com</p>
-            <p>LinkedIn: <a href="#">linkedin.com/in/aditi-tyagi</a></p>
-            <p>GitHub: <a href="#">github.com/aditityagi</a></p>
-        </section>
-    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="image.jpg" alt="Profile">
+            </div>
+            <div class="hero-text">
+                <h2>Cloud Computing Enthusiast</h2>
+                <p>Passionate software engineer with expertise in building scalable web applications. Experienced in modern web technologies and agile methodologies. A cloud practitioner with a strong foundation in cloud computing, networking, and security management.</p>
+                <div class="hero-buttons">
+                    <a href="Adnan_Resume.pdf" download="Aditi_Tyagi_Resume.pdf" class="btn primary">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Data Visualization">
+                    <div class="project-buttons">
+                        <a href="https://github.com/aditityagi123/DockerFileExersice/tree/main/02.Streamlit%20%2B%20Docker-Interactive%20Data%20Visualization" class="project-btn github" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://dockerexercises-iw8zgnigqwrawqu6vcxzim.streamlit.app/" class="project-btn demo" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Data Visualization</h3>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Binary Classification WebApp">
+                    <div class="project-buttons">
+                        <a href="https://github.com/aditityagi123/DockerFileExersice/tree/main/03.Streamlit%20%2B%20Docker-Machine%20Learning%20Classification%20App" class="project-btn github" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://app-docker-machine-learning-classification-app-nvwhkrpvzydaunr.streamlit.app/" class="project-btn demo" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Binary Classification WebApp</h3>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" alt="Titanic Survival">
+                    <div class="project-buttons">
+                        <a href="https://github.com/aditityagi123/DockerFileExersice/tree/main/10.Titanic%20Survival%20Predictor--A%20Containerized%20Streamlit%20ML%20App" class="project-btn github" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://titanic-survival-predictor--a-containerized-app-ml-app-t8vb82m.streamlit.app/" class="project-btn demo" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Titanic Survival</h3>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="	https://images.unsplash.com/photo-1556155092-8707de31f9c4?auto=format&fit=crop&w=800&q=80" alt="AIML Model">
+                    <div class="project-buttons">
+                        <a href="https://github.com/aditityagi123/AIML-Model" class="project-btn github" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://healthcare-ml-tutorial.streamlit.app/" class="project-btn demo" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-overlay">
+                    <h3>AIML Model</h3>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Project Image">
+                    <div class="project-buttons">
+                        <a href="https://github.com/aditityagi123/DockerFileExersice" class="project-btn github" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Docker Practice</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">Node.js</div>
+            <div class="skill-card">AWS</div>
+            <div class="skill-card">Docker</div>
+            <div class="skill-card">Git</div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <form class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn primary">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Aditi Tyagi. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/aditityagi123" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aditi-tyagi-2197151a7/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
